@@ -1,0 +1,3 @@
+targets:
+  newsapi: shared-us-west-2/cjhk1cqby89yz0107u4hghp0k
+  default: newsapi
