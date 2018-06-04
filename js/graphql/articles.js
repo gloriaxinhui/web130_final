@@ -8,13 +8,13 @@ let getAllArticles = `
     }
 `;
 
-$(document).ready(function () {
+$(document).ready(function() {
     $.post({
         url: 'https://api.graph.cool/simple/v1/cjhk1cqby89yz0107u4hghp0k',
         data: JSON.stringify({
             query: getAllArticles
         }),
-        success: response => {
+        success: (response) => {
             let articles = response.data.allArticles;
             console.log(articles);
             let html = '';

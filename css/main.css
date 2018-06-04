@@ -1,62 +1,198 @@
-/*
-Error: File to import not found or unreadable: bootstrap.
-       Load path: /home/ubuntu/workspace/final_project/sass
-        on line 3 of sass/main.sass
+.col-lg-1 {
+  float: left;
+  width: 8.3333333333%; }
 
-1: @import "grid"
-2: @import "utils"
-3: @import "bootstrap"
-4: 
-5: #loginPanel
-6:     margin: auto
-7:     text-align: center
-8:     border: 1px solid #b4b4b4
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-1 {
+    float: left;
+    width: 8.3333333333%; } }
 
-Backtrace:
-sass/main.sass:3
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:45:in `import'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-/usr/local/rvm/gems/ruby-2.4.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
-/usr/local/rvm/gems/ruby-2.4.0/bin/sass:22:in `load'
-/usr/local/rvm/gems/ruby-2.4.0/bin/sass:22:in `<main>'
-/usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
-/usr/local/rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: bootstrap.\A        Load path: /home/ubuntu/workspace/final_project/sass\A         on line 3 of sass/main.sass\A \A 1: @import \"grid\"\A 2: @import \"utils\"\A 3: @import \"bootstrap\"\A 4: \A 5: #loginPanel\A 6:     margin: auto\A 7:     text-align: center\A 8:     border: 1px solid #b4b4b4"; }
+@media screen and (max-width: 39.99em) {
+  .col-sm-1 {
+    float: left;
+    width: 8.3333333333%; } }
+
+.col-lg-2 {
+  float: left;
+  width: 16.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-2 {
+    float: left;
+    width: 16.6666666667%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-2 {
+    float: left;
+    width: 16.6666666667%; } }
+
+.col-lg-3 {
+  float: left;
+  width: 25%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-3 {
+    float: left;
+    width: 25%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-3 {
+    float: left;
+    width: 25%; } }
+
+.col-lg-4 {
+  float: left;
+  width: 33.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-4 {
+    float: left;
+    width: 33.3333333333%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-4 {
+    float: left;
+    width: 33.3333333333%; } }
+
+.col-lg-5 {
+  float: left;
+  width: 41.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-5 {
+    float: left;
+    width: 41.6666666667%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-5 {
+    float: left;
+    width: 41.6666666667%; } }
+
+.col-lg-6 {
+  float: left;
+  width: 50%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-6 {
+    float: left;
+    width: 50%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-6 {
+    float: left;
+    width: 50%; } }
+
+.col-lg-7 {
+  float: left;
+  width: 58.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-7 {
+    float: left;
+    width: 58.3333333333%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-7 {
+    float: left;
+    width: 58.3333333333%; } }
+
+.col-lg-8 {
+  float: left;
+  width: 66.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-8 {
+    float: left;
+    width: 66.6666666667%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-8 {
+    float: left;
+    width: 66.6666666667%; } }
+
+.col-lg-9 {
+  float: left;
+  width: 75%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-9 {
+    float: left;
+    width: 75%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-9 {
+    float: left;
+    width: 75%; } }
+
+.col-lg-10 {
+  float: left;
+  width: 83.3333333333%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-10 {
+    float: left;
+    width: 83.3333333333%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-10 {
+    float: left;
+    width: 83.3333333333%; } }
+
+.col-lg-11 {
+  float: left;
+  width: 91.6666666667%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-11 {
+    float: left;
+    width: 91.6666666667%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-11 {
+    float: left;
+    width: 91.6666666667%; } }
+
+.col-lg-12 {
+  float: left;
+  width: 100%; }
+
+@media screen and (min-width: 40em) and (max-width: 63.99em) {
+  .col-md-12 {
+    float: left;
+    width: 100%; } }
+
+@media screen and (max-width: 39.99em) {
+  .col-sm-12 {
+    float: left;
+    width: 100%; } }
+
+#loginPanel {
+  margin: auto;
+  text-align: center;
+  border: 1px solid #b4b4b4;
+  border-radius: 5px;
+  padding: 2.5em 0; }
+  #loginPanel h2 {
+    margin: 0;
+    margin-bottom: .5em; }
+  #loginPanel form {
+    line-height: 2.25em; }
+    #loginPanel form i {
+      color: gray; }
+    #loginPanel form label {
+      border: 1px solid #b4b4b4;
+      border-radius: 5px 0 0 5px;
+      padding: 5.5px 10px;
+      background-color: #f0f0f0; }
+    #loginPanel form input {
+      border: 1px solid #b4b4b4;
+      border-radius: 0 5px 5px 0;
+      padding: 8px;
+      margin-left: -5px; }
+  #loginPanel #primeButton {
+    background-color: DodgerBlue;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: .5em 6.5em;
+    margin-top: 1.5em; }
