@@ -171,7 +171,8 @@
   text-align: center;
   border: 1px solid #b4b4b4;
   border-radius: 5px;
-  padding: 2.5em 0; }
+  padding: 2.5em 0;
+  float: none; }
   #loginPanel h2 {
     margin: 0;
     margin-bottom: .5em; }
@@ -189,7 +190,7 @@
       border-radius: 0 5px 5px 0;
       padding: 8px;
       margin-left: -5px; }
-  #loginPanel #primeButton {
+  #loginPanel #login-button {
     background-color: DodgerBlue;
     color: white;
     margin: auto;

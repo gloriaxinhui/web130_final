@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-    <title>Login form</title>
+    <title>Newspaper Login</title>
 </head>
 <body>
-    <br><br>
     <main class="container">
-        <div class="row">
-            <div id="loginPanel" class="col-sm-12 col-md-6 col-md-offset-3 col-lg-3">
+        <div class="row justify-content-center">
+            <div id="loginPanel" class="col-sm-12 col-md-6 col-lg-4">
                 <h2>Editor Login</h2>
                 <form>
-                    <div class="form-group">
+                    <div class="form-group row">
                         <label for="username"><small><i class="fas fa-envelope"></i></small></label>
-                        <input type="text" name="Email" placeholder="Email">
-                        <br>
-                        <label for="password"><small><i class="fas fa-asterisk"></i></small></label>
-                        <input type="password" name="password" placeholder="Password">
+                        <input type="text" class="form-control" id="username" name="Email" placeholder="Email">
                     </div>
                     
-                    <input id="primeButton" type="submit" value="Login"/>
+                    <div class="form-group row">
+                        <label for="password"><small><i class="fas fa-asterisk"></i></small></label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="*********">
+                    </div>
+                    
+                    <button id="login-button" type="submit" class="btn btn-primary">Login</button>
                 </form>
             </div>
         </div>
     </main>
 
+    <script type="text/javascript">
+        var JS_PAGE = 'login_view';
+    </script>
     <script type="text/javascript" src="js/build/app.js"></script>
 </body>
 </html>
