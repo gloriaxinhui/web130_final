@@ -1,22 +1,83 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modues/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|UnifrakturMaguntia|Stardos+Stencil" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-    <title>Hello, world!</title>
+    <title>SCC News Detail</title>
 </head>
+
 <body>
+  
+    <header><h1>Seattle Central News Hub</h1></header>
+    
+    <ul class="date-weather nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link">Wednesday, June 13th, 2018</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"><img src="img/sunny.gif"> 59&#8457;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Editor Login</a>
+        </li>
+    </ul>
+    
+    <nav class=" nav navbar-nav">
+        <ul class="closed">
+            <li id="mobile-menu" class="mobile-only">
+                <a href="#">
+                    <div id="hamburger"></div>
+                    MENU
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a  class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Campus
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Community
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Opinion
+               </a> 
+            </li>
+        </ul>
+    </nav>
+
+<!-- end nav bar. -->
+
     <main class="container">
-        <div class="row">
-            <div class="col-sm-12" id="main-content">
-                <h1>Article Detail</h1>
-            </div>
-        </div>
+        <section class="row justify-content-center">
+            <article class="col-md-8 ">
+                <h1 id="article-title" class="headline"></h1>
+                <div id="article-content">
+                    Loading...
+                </div>
+            </article>
+        </section>
     </main>
-    <script type="text/javascript" src="">
+    
+    <script type="text/javascript">
         var JS_PAGE = 'detail_view';
     </script>
     <script type="text/javascript" src="js/build/app.js"></script>

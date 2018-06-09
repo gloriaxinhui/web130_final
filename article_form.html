@@ -1,22 +1,103 @@
 <!doctype html>
 <html lang="en">
 <head>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="node_modues/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|UnifrakturMaguntia|Stardos+Stencil" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-    <title>Hello, world!</title>
+    <title>SCC Hub Form</title>
 </head>
+
 <body>
+  
+    <header><h1>Seattle Central News Hub</h1></header>
+    
+    <ul class="date-weather nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link">Wednesday, June 13th, 2018</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"><img src="img/sunny.gif"> 59&#8457;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Editor Login</a>
+        </li>
+    </ul>
+    
+    <nav class=" nav navbar-nav">
+        <ul class="closed">
+            <li id="mobile-menu" class="mobile-only">
+                <a href="#">
+                    <div id="hamburger"></div>
+                    MENU
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a  class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Campus
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Community
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Opinion
+               </a> 
+            </li>
+        </ul>
+    </nav>
+
+      <!-- end nav bar. -->
+    
     <main class="container">
-        <div class="row">
-            <div class="col-sm-12" id="main-content">
-                <h1>Article Form</h1>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8" id='main-content'>
+                <h4>Article Form</h4>
+                <form>
+                    <div class="form-group row">
+                        <label for="title" class="col-sm-2 col-form-label">Title</label>
+                        <input type="text" name="title" id="title" class="form-control">
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="category" class="col-sm-2 col-form-label">Category</label>
+                        <input type="text" name="category" id="category" class="form-control">
+                    </div>
+                    
+                    <div class="form-group row">
+                        <label for="content" class="col-sm-2 col-form-label">Content</label>
+                        <textarea name="content" id="content" class="form-control"></textarea>
+                    </div>
+                    
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <input id="save-article-button" type="submit" value="Submit" class="btn btn-primary">
+                        </div>
+                    </div>
+                    
+                </form>
             </div>
         </div>
     </main>
-    <script type="text/javascript" src="">
+    
+    <script type="text/javascript">
         var JS_PAGE = 'form_view';
     </script>
     <script type="text/javascript" src="js/build/app.js"></script>

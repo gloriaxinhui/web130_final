@@ -5,24 +5,79 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Anton|UnifrakturMaguntia|Stardos+Stencil" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
 
-    <title>Newspaper Login</title>
+    <title>SCC Hub Login</title>
 </head>
 <body>
+    
+<!-- Begining Header -->
+
+    <header><h1>Seattle Central News Hub</h1></header>
+    
+    <ul class="date-weather nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link">Wednesday, June 13th, 2018</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"><img src="img/sunny.gif"> 59&#8457;</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Editor Login</a>
+        </li>
+    </ul>
+    
+    <nav class=" nav navbar-nav">
+        <ul class="closed">
+            <li id="mobile-menu" class="mobile-only">
+                <a href="#">
+                    <div id="hamburger"></div>
+                    MENU
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a  class="nav-link" href="index.html">
+                    Home
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Campus
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Community
+                </a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                   Opinion
+               </a> 
+            </li>
+        </ul>
+    </nav>
+
+<!-- end nav bar. -->
+      
     <main class="container">
         <div class="row justify-content-center">
             <div id="loginPanel" class="col-sm-12 col-md-6 col-lg-4">
-                <h2>Editor Login</h2>
+                <h4>Editor Login</h4>
                 <form>
-                    <div class="form-group row">
-                        <label for="username"><small><i class="fas fa-envelope"></i></small></label>
-                        <input type="text" class="form-control" id="username" name="Email" placeholder="Email">
+                    <div>
+                        <label for="username"><i class="fas fa-envelope"></i></label>
+                        <input type="text" id="username" name="Email" placeholder="Email">
                     </div>
                     
-                    <div class="form-group row">
-                        <label for="password"><small><i class="fas fa-asterisk"></i></small></label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="*********">
+                    <div>
+                        <label for="password"><i class="fas fa-asterisk"></i></label>
+                        <input type="password" id="password" name="password" placeholder="*********">
                     </div>
                     
                     <button id="login-button" type="submit" class="btn btn-primary">Login</button>
